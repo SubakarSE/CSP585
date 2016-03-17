@@ -1,9 +1,10 @@
 import javax.swing.ImageIcon;
 
 
-public class Dalmatian extends Dog{
+public class Persian extends Cat {
 	
-	public static int Identifier = 1;
+	
+	public static int Identifier = 3;
 	public String Name;
 	public int Id;
 	public int Age;
@@ -13,7 +14,7 @@ public class Dalmatian extends Dog{
 	public String Notes;
 	public String MedicalCondition;
 	
-	public Dalmatian (String Name, int Id, int Age, String Type,String Breed, String ReadyForAdoption, String Notes, String MedicalCondition)
+	public Persian (String Name, int Id, int Age, String Type,String Breed, String ReadyForAdoption, String Notes, String MedicalCondition)
 	{
 		this.Name= Name;
 		this.Id= Id;
@@ -25,14 +26,16 @@ public class Dalmatian extends Dog{
 		this.MedicalCondition = MedicalCondition;
 	}
 	
+	
+	
 	@Override
 	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//dog2.png");
+		 ImageIcon aboutIcon = new ImageIcon("src//image//cat1.png");
 		 return aboutIcon;
 	}
 
 	@Override
-	public String toString() {		
+	public String toString() {
 		String temp;
 		String temp1="     ";
 		StringBuilder a = new StringBuilder();
@@ -62,10 +65,11 @@ public class Dalmatian extends Dog{
 		return a.toString();
 	}
 
+
+
 	@Override
 	public int getIdentifier() {
 		// TODO Auto-generated method stub
 		return Identifier;
 	}
-
 }

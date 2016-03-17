@@ -1,9 +1,9 @@
 import javax.swing.ImageIcon;
 
 
-public class Dalmatian extends Dog{
+public class FoxSparrow extends Sparrow {
 	
-	public static int Identifier = 1;
+	public static int Identifier = 5;
 	public String Name;
 	public int Id;
 	public int Age;
@@ -13,7 +13,7 @@ public class Dalmatian extends Dog{
 	public String Notes;
 	public String MedicalCondition;
 	
-	public Dalmatian (String Name, int Id, int Age, String Type,String Breed, String ReadyForAdoption, String Notes, String MedicalCondition)
+	public FoxSparrow (String Name, int Id, int Age, String Type,String Breed, String ReadyForAdoption, String Notes, String MedicalCondition)
 	{
 		this.Name= Name;
 		this.Id= Id;
@@ -27,9 +27,10 @@ public class Dalmatian extends Dog{
 	
 	@Override
 	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//dog2.png");
+		 ImageIcon aboutIcon = new ImageIcon("src//image//Sparrow.png");
 		 return aboutIcon;
 	}
+
 
 	@Override
 	public String toString() {		

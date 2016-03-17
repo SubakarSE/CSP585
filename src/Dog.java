@@ -1,15 +1,10 @@
+import javax.swing.ImageIcon;
 
-public abstract class Dog extends Mammal implements Animal{
-	
-	public String Name;
-	public int Id;
-	public int Age;
-	public String Type;
-	public String Breed;
-	public int ReadyForAdoption;
-	
-	
-	public abstract void draw();
-	public abstract void toPrint();
+//Abstract class Dog which implements Mammal
+public interface Dog extends Mammal{
 
+	
+	public abstract ImageIcon draw();
+	public abstract String toString();
+	public abstract int getIdentifier();
 }

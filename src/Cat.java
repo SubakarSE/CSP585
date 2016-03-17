@@ -1,8 +1,10 @@
+import javax.swing.ImageIcon;
 
-public abstract class Cat extends Mammal implements Animal{
+
+public interface  Cat extends Mammal {
 	
 	public abstract String toString();
-	public abstract void draw();
-	
+	public abstract ImageIcon draw();
+	public abstract int getIdentifier();
 
 }
