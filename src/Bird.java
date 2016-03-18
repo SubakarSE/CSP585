@@ -1,10 +1,10 @@
 import javax.swing.ImageIcon;
 
 //Abstract class Bird which implements animal
-public abstract class Bird implements Animal{
+public interface Bird extends Animal{
 	
 		public abstract String toString();
-		public abstract ImageIcon draw();
+		public abstract void draw();
 		public abstract int getIdentifier();		
 
 	}

@@ -1,10 +1,10 @@
 import javax.swing.ImageIcon;
 
 
-public abstract class Sparrow extends Bird {
+public interface Sparrow extends Bird {
 	
 	public abstract String toString();
-	public abstract ImageIcon draw();
+	public abstract void draw();
 	public abstract int getIdentifier();
 
 }

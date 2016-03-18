@@ -33,9 +33,8 @@ public  class American extends JPanel implements Animal,Cat  {
 	}
 	
 	
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//cat2.png");
-		 return aboutIcon;
+	public void draw(){
+		repaint();
 	}
 	
 	@Override

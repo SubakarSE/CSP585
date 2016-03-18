@@ -1,7 +1,8 @@
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 
-public class Persian extends Cat {
+public class Persian  extends JPanel implements Animal, Cat {
 	
 	
 	public static int Identifier = 3;
@@ -29,9 +30,8 @@ public class Persian extends Cat {
 	
 	
 	@Override
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//cat1.png");
-		 return aboutIcon;
+	public void draw(){
+		 repaint();
 	}
 
 	@Override

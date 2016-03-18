@@ -1,7 +1,7 @@
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
-
-public class Rosecomb extends Chicken {
+public class Rosecomb extends JPanel implements Animal,Chicken {
 	
 	public static int Identifier = 4;
 	public String Name;
@@ -25,9 +25,8 @@ public class Rosecomb extends Chicken {
 		this.MedicalCondition = MedicalCondition;
 	}
 	
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//chicken1.png");
-		 return aboutIcon;
+	public void draw(){
+		 repaint();
 	}
 
 

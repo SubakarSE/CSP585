@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
 public interface Dog extends Mammal{
 
 	
-	public abstract ImageIcon draw();
+	public abstract void draw();
 	public abstract String toString();
 	public abstract int getIdentifier();
 }

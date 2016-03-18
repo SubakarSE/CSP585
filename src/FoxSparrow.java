@@ -1,7 +1,8 @@
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 
-public class FoxSparrow extends Sparrow {
+public class FoxSparrow  extends JPanel implements Animal, Sparrow {
 	
 	public static int Identifier = 5;
 	public String Name;
@@ -26,9 +27,8 @@ public class FoxSparrow extends Sparrow {
 	}
 	
 	@Override
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//Sparrow.png");
-		 return aboutIcon;
+	public void draw(){
+		repaint();
 	}
 
 

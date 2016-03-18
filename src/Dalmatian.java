@@ -1,10 +1,14 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 
-public class Dalmatian extends Dog{
+public class Dalmatian extends JPanel implements Animal,Dog {
 	
 	public static int Identifier = 1;
-	public String Name;
+	public char[] Name;
 	public int Id;
 	public int Age;
 	public String Type;
@@ -12,23 +16,17 @@ public class Dalmatian extends Dog{
 	public String ReadyForAdoption;
 	public String Notes;
 	public String MedicalCondition;
+	static Dalmatian d=null;
 	
-	public Dalmatian (String Name, int Id, int Age, String Type,String Breed, String ReadyForAdoption, String Notes, String MedicalCondition)
-	{
-		this.Name= Name;
-		this.Id= Id;
-		this.Age=Age;
-		this.Type=Type;
-		this.Breed=Breed;
-		this.ReadyForAdoption=ReadyForAdoption;
-		this.Notes = Notes;
-		this.MedicalCondition = MedicalCondition;
+	public Dalmatian(String Name){
+		this.Name= Name.toCharArray();
 	}
 	
+	
+	
 	@Override
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//dog2.png");
-		 return aboutIcon;
+	public void draw(){
+		repaint();
 	}
 
 	@Override
@@ -67,5 +65,9 @@ public class Dalmatian extends Dog{
 		// TODO Auto-generated method stub
 		return Identifier;
 	}
+	
+	public char[] getAnimalName(){		
+		return this.Name;
+	}	
 
 }

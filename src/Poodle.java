@@ -38,9 +38,8 @@ public class Poodle extends JPanel implements Animal,Dog {
 	}
 		
 	@Override
-	public ImageIcon draw(){
-		 ImageIcon aboutIcon = new ImageIcon("src//image//poodle.png");
-		 return aboutIcon;
+	public void draw(){
+	repaint();
 	}
 
 	
